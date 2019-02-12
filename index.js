@@ -38,6 +38,7 @@ bot.on('message', (message) => {
         const msg = message.content.toLowerCase();
         
         if(msg == '!help') {
+            message.delete();
             message.channel.send('You can use these commands: \n \n!clanrules - displays clan rules \n!chatrules - displays server chat rules \n!roe - displays RoE');
         }
         
@@ -46,34 +47,39 @@ bot.on('message', (message) => {
             message.channel.send('Pong');
         }
         
-        if(msg == '!clanrules') {
-            message.channel.send('1. At the end of the game of a formal clan activity, do not move. \n2. Do not disrespect dead bodies during clan activities, or whenever you represent the clan. \n3. During a clan activity, do not pick up a power weapon or press a switch unless you are authorized to do so.');
-        }
-        
         const args = message.content.trim().split(/ +/g);
         const command = args.shift().toLowerCase();
         
-        if (command === "?how") {
-            let a = args[0];
-            let b = args[1];
-            let name = args[2];
+        if (command === "?20") {
+            let b = args[0];
 
             var list = [
-                '1, Not Really Dumb At All',
-                '2, Not The Brightest Dude On The Block',
-                '3, Pretty Goddamn Stupid',
-                '4, Incompetent Fool',
-                '5, Born And Raised In Texas',
-                '6, Invested In Cryptocurrency',
-                '7, Cannot Tell The Difference Between Tomatoes and Dildos',
-                '8, Suffering From The Jslayer Disease',
-                '9, Promoted Dreamz To Sector Leader',
-                '10, Has Already Pre-Ordered Battlefront III'
+                '1',
+                '2',
+                '3',
+                '4',
+                '5',
+                '6',
+                '7',
+                '8',
+                '9',
+                '10',
+                '11',
+                '12',
+                '13',
+                '14',
+                '15',
+                '16',
+                '17',
+                '18',
+                '19',
+                '20'
             ];
             
-            var rand = Math.floor(Math.random() * list.length);
+            var rand = Math.floor(Math.random() * 20 + 1 + b);
 
-            message.channel.send(`On a scale of 1-10, ${name} has received a dumbass score of ` + list[rand]);
+            message.delete()
+            message.channel.send(`You rolled a d20 + ${b}. \nYour result is ` + rand);
         }
         
         if (command === "jenkins") {
