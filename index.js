@@ -3,35 +3,33 @@ const bot = new Discord.Client();
 
 bot.on('ready', () => {
         bot.user.setStatus('Online')
-        bot.user.setPresence({ game: { name: 'Phoenix Era', type: 0 } })
+        bot.user.setPresence({ game: { name: 'D&D 5e', type: 1 } })
 });
 
 bot.on('guildMemberAdd', member => {
         
-        const welcomechannel = member.guild.channels.find('name','unofficial')
+        const welcomechannel = member.guild.channels.find('name','dnd-chat')
          
         var embed = new Discord.RichEmbed()
         .setColor('RANDOM')
-        .setDescription(member.user + " has joined the server of Phoenix Era. May any existing deity have mercy on this poor bastard's soul.")
+        .setDescription("OH HELLOOOOOOOOO! " + member.user + " has joined the Rousing Bellows campaign.")
         return welcomechannel.send(embed)
         
 });
 
 bot.on('guildMemberAdd', member => {
         
-        let role = member.guild.roles.get('391331240738947073');
+        let role = member.guild.roles.get('454396878621114380');
         member.addRole(role).catch(console.error);
-        let roles = member.guild.roles.get('417861841721491482');
-        member.addRole(roles).catch(console.error);
-        member.sendMessage('Welcome to Phoenix Era. Type !help to see a list of useful commands. \nType !chatrules to see server rules. \nPlease read the member guide: \nhttps://docs.google.com/document/d/1AdhipSusWtomgfIVPc4X-gp3A2WGUas3dilsnDuHrDk/edit?usp=sharing \n \nAbove all: do not be stupid.');
+        member.sendMessage('Welcome to Rousing Bellows. \nDo not be Tiefling scum. \n \nJust kidding... we do not have prejudice here...');
 });
 
 bot.on('guildMemberRemove', member => {
-        const leave = member.guild.channels.find('name','unofficial')
+        const leave = member.guild.channels.find('name','dnd-chat')
         
         var embed = new Discord.RichEmbed()
         .setColor('RANDOM')
-        .setDescription(member.user.tag + " has left the server. I never liked that dumbass anyway.")
+        .setDescription(member.user.tag + " has left the server. Tiefling scum.")
         return leave.send(embed)
 });
 
@@ -63,16 +61,8 @@ bot.on('message', (message) => {
             message.channel.send('I dunno, could you just type !roe like a normal person?');
         }
         
-        if(msg == '!class3') {
-            message.channel.send('<@&417861841721491482> Get the hell on Halo now. <:GetOnHalo:417888045925138432>');
-        }
-        
-        if(msg == '!class2') {
-            message.channel.send('<@&417862299609595905> Get the hell on Halo now. <:GetOnHalo:417888045925138432>');
-        }
-        
-        if(msg == '!class1') {
-            message.channel.send('<@&417862490240581632> Get the hell on Halo now. <:GetOnHalo:417888045925138432>');
+        if(msg == '!RB') {
+            message.channel.send('<@&454396878621114380> D&D time!!! <:Fire:510886639908945930>');
         }
         
         if(msg == '!roe') {
