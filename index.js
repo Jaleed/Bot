@@ -77,15 +77,20 @@ bot.on('message', (message) => {
             ];
             
             var rand = Math.floor(Math.random() * 20 + 1);
-            var rands = Math.floor(rand + ${b}.
+            var rands = Math.floor(rand + ${b});
 
             message.delete()
             message.channel.send(`You rolled a d20 + ${b}. \nYour rolled a ` + rand + `. \nYour result is ` + rands + `.`);
         }
         
-        if (command === "jenkins") {
+        if (command === "jaleed") {
 
             var list = [
+                'OH HELLO!'
+                'OH HELLOOO!'
+                'OH HELLOOOOOO!'
+                'OH HELLOOOOOOOOO!'
+                'OH HELLOOOOOOOOOOOOOOOOOO!'
                 'Wassup homie?',
                 'How you doin?',
                 'Yo.',
