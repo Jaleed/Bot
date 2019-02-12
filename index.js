@@ -51,30 +51,7 @@ bot.on('message', (message) => {
         const command = args.shift().toLowerCase();
         
         if (command === "?20") {
-            var b = args[0];
-
-            var list = [
-                '1',
-                '2',
-                '3',
-                '4',
-                '5',
-                '6',
-                '7',
-                '8',
-                '9',
-                '10',
-                '11',
-                '12',
-                '13',
-                '14',
-                '15',
-                '16',
-                '17',
-                '18',
-                '19',
-                '20'
-            ];
+            let b = args[0];
             
             var rand = Math.floor(Math.random() * 20 + 1);
             var rands = Math.floor(3 + 1);
