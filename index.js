@@ -78,11 +78,11 @@ bot.on('message', (message) => {
             
             var rand = Math.floor(Math.random() * 20 + 1 + b);
 
-            message.delete();
-            message.channel.send(`You rolled a d20 + ${b} \nYou rolled a ` + rand);
+            message.delete()
+            message.channel.send(`You rolled a d20 + ${b}. \nYour result is ` + rand);
         }
         
-        if (command === "jaleed") {
+        if (command === "jenkins") {
 
             var list = [
                 'Wassup homie?',
