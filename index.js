@@ -77,7 +77,7 @@ bot.on('message', (message) => {
             ];
             
             var rand = Math.floor(Math.random() * 20 + 1);
-            var rands = Math.floor(rand + 1);
+            var rands = Math.floor(3 + 1);
 
             message.delete();
             message.channel.send(`You rolled a d20 + ${b} \nYou rolled a ` + rand);
