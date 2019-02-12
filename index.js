@@ -42,8 +42,8 @@ bot.on('message', (message) => {
         }
         
         if(msg == '!ping') {
+            message.delete();
             message.channel.send('Pong');
-            message.delete(1);
         }
         
         if(msg == '!clanrules') {
