@@ -77,7 +77,7 @@ bot.on('message', (message) => {
             ];
             
             var rand = Math.floor(Math.random() * 20 + 1);
-            var bb = parseInt(args[0]);
+            var bb = parseInt(b);
             var rands = Math.floor(rand + bb);
 
             message.delete();
