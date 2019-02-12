@@ -42,7 +42,7 @@ bot.on('message', (message) => {
         }
         
         if(msg == '!ping') {
-            message.delete('!ping');
+            message.delete();
             message.channel.send('Pong');
         }
         
