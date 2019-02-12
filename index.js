@@ -51,7 +51,7 @@ bot.on('message', (message) => {
         const command = args.shift().toLowerCase();
         
         if (command === "?20") {
-            let b = args[0];
+            var b = args[0];
 
             var list = [
                 '1',
