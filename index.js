@@ -3,7 +3,7 @@ const bot = new Discord.Client();
 
 bot.on('ready', () => {
         bot.user.setStatus('Online')
-        bot.user.setPresence({ game: { name: 'your party all die', type: 3 } })
+        bot.user.setPresence({ game: { name: 'Your Party As They All Die', type: 3 } })
 });
 
 bot.on('guildMemberAdd', member => {
