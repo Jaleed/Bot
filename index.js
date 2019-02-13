@@ -47,7 +47,7 @@ bot.on('message', (message) => {
             message.channel.send('Pong, bitch!');
         }
         
-        if(msg == '?D&D') {
+        if(msg == '?d&d') {
             message.delete();
             message.channel.send('<@&454396878621114380> D&D time! <:Kayn:510871552225705984> <:Elmar:525967482582859778> <:Kana:542918484175224852> <:Karrus:510871567392047134> <:Zircones:545368422717063192>');
         }
