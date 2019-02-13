@@ -62,11 +62,6 @@ bot.on('message', (message) => {
         if (command === "jaleed") {
 
             var list = [
-                'OH HELLO!'
-                'OH HELLOOO!'
-                'OH HELLOOOOOO!'
-                'OH HELLOOOOOOOOO!'
-                'OH HELLOOOOOOOOOOOOOOOOOO!'
                 'Wassup homie?',
                 'How you doin?',
                 'Yo.',
