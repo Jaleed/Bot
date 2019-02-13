@@ -62,11 +62,16 @@ bot.on('message', (message) => {
         if (command === "jaleed") {
 
             var list = [
+                'OH HELLO!',
+                'OH HELLOOO!',
+                'OH HELLOOOOOO!',
+                'OH HELLOOOOOOOOO!',
+                'OH HELLOOOOOOOOOOOOOOOOOO!',
                 'Wassup homie?',
                 'How you doin?',
                 'Yo.',
                 'Hey there.',
-                'What you need my dude?',
+                'What you need my dude?'
             ];
             
             var rand = Math.floor(Math.random() * list.length);
