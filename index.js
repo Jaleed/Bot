@@ -254,7 +254,7 @@ bot.on('message', (message) => {
             message.reply(`You rolled a d20 + ${b}. \nYou rolled a ` + list[rand] + `. \nYour result is **` + rands + `**.`);
         }
         
-        if (command === "?2Ø") {
+        if (command === "?2ø") {
             var b = parseInt(args[0],10);
             
             var list = [
