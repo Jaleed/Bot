@@ -57,8 +57,7 @@ bot.on('message', (message) => {
             var rands = Math.floor(rand + b);
 
             message.delete();
-            message.channel.send(`You rolled a d20 + ${b} \nYou rolled a ` + rand);
-            message.channel.send(`Your result is ` + rands);
+            message.channel.send(`You rolled a d20 + ${b}. \nYou rolled a ` + rand + `. \nYour result is ` + rands + `.`);
         }
         
         if (command === "jaleed") {
