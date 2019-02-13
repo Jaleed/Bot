@@ -51,7 +51,7 @@ bot.on('message', (message) => {
         const command = args.shift().toLowerCase();
         
         if (command === "?20") {
-            var b = args[0];
+            let b = args[0];
             
             var rand = Math.floor(Math.random() * 20 + 1);
             var rands = Math.floor(rand + b);
