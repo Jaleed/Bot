@@ -301,7 +301,7 @@ bot.on('message', (message) => {
                 'OH HELLOOOOOO?!',
                 'OH HELLOOOOOOOOO???',
                 'OH HELLOOOOOOOOOOOOOOOOOO!!!',
-                'Welcome to my shop, the Enamored Fish!',
+                'Welcome to my shop, the Enamored Fish! Oh!',
                 'How goes the day, friend?',
                 'Oy mate.',
                 'Greetings to thee, fair maiden.',
