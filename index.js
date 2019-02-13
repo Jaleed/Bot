@@ -51,10 +51,10 @@ bot.on('message', (message) => {
         const command = args.shift().toLowerCase();
         
         if (command === "?20") {
-            const b = args[0];
+            var b = args[0];
             
             var rand = Math.floor(Math.random() * 20 + 1);
-            var rands = Math.floor(rand + b);
+            var rands = Math.floor(b + 1);
 
             message.delete();
             message.channel.send(`You rolled a d20 + ${b} \nYou rolled a ` + rand);
