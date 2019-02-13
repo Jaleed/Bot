@@ -53,11 +53,35 @@ bot.on('message', (message) => {
         if (command === "?20") {
             var b = parseInt(args[0],10);
             
+            var list = [
+                '0 - uh oh that is an error',
+                '**1** - ***Critical Fail***',
+                '2',
+                '3',
+                '4',
+                '5',
+                '6',
+                '7',
+                '8',
+                '9',
+                '10',
+                '11',
+                '12',
+                '13',
+                '14',
+                '15',
+                '16',
+                '17',
+                '18',
+                '19',
+                '**20** - ***Critical Hit***'
+            ];
+            
             var rand = Math.floor(Math.random() * 20 + 1);
             var rands = Math.floor(rand + b);
 
             message.delete();
-            message.reply(`You rolled a d20 + ${b}. \nYou rolled a ` + rand + `. \nYour result is **` + rands + `**.`);
+            message.reply(`You rolled a d20 + ${b}. \nYou rolled a ` + list[rand] + `. \nYour result is **` + rands + `**.`);
         }
         
         if (command === "jaleed") {
