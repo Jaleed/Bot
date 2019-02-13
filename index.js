@@ -48,7 +48,7 @@ bot.on('message', (message) => {
         }
         
         if(msg == 'jaleed, who made you?') {
-            message.channel.send('@!216628403921485824');
+            message.channel.send('!216628403921485824');
         }
         
         const args = message.content.trim().split(/ +/g);
