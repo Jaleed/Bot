@@ -39,12 +39,17 @@ bot.on('message', (message) => {
         
         if(msg == '?help') {
             message.delete();
-            message.channel.send('In order to roll, type **/[sides of dice] [modifier]**. \nI currently support 2, 4, 6, 8, 10, 12, 20, and 100 sided dice.');
+            message.channel.send('In order to roll, type **?[sides of dice] [modifier]**. \nI currently support 2, 4, 6, 8, 10, 12, 20, and 100 sided dice.');
         }
         
         if(msg == '?ping') {
             message.delete();
-            bot.channels.get('544990759061815316').send('Pong, bitch!');
+            message.channel.send('Pong, bitch!');
+        }
+        
+        if(msg == 'jaleed, who made you?') {
+            message.delete();
+            message.channel.send('@Nuqrs#0486');
         }
         
         const args = message.content.trim().split(/ +/g);
@@ -296,16 +301,23 @@ bot.on('message', (message) => {
                 'OH HELLOOOOOO?!',
                 'OH HELLOOOOOOOOO???',
                 'OH HELLOOOOOOOOOOOOOOOOOO!!!',
-                'Wassup homie?',
-                'How you doin?',
-                'Yo.',
-                'Hey there.',
-                'What you need my dude?'
+                'Welcome to my shop, the Enamored Fish!',
+                'How goes the day, friend?',
+                'Oy mate.',
+                'Greetings to thee, fair maiden.',
+                'OH! My back- OOOOH... anyway, you need something?'
             ];
             
             var rand = Math.floor(Math.random() * list.length);
 
             message.channel.send(list[rand]);
+        }
+        
+        if (command === "?add") {
+            let b = args[0];
+
+            message.delete();
+            bot.channels.get('454414428801335297').send(`${b}`);
         }
         
 });
