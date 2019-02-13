@@ -25,7 +25,7 @@ bot.on('guildMemberAdd', member => {
 });
 
 bot.on('guildMemberRemove', member => {
-        const leave = member.guild.channels.find('name','dnd-chat')
+        const leave = member.guild.channels.find('name','off-topic')
         
         var embed = new Discord.RichEmbed()
         .setColor('RANDOM')
@@ -45,6 +45,16 @@ bot.on('message', (message) => {
         if(msg == '?ping') {
             message.delete();
             message.channel.send('Pong, bitch!');
+        }
+        
+        if(msg == '?D&D') {
+            message.delete();
+            message.channel.send('<@&454396878621114380> D&D time! <:Kayn:510871552225705984> <:Elmar:525967482582859778> <:Kana:542918484175224852> <:Karrus:510871567392047134> <:Zircones:545368422717063192>');
+        }
+        
+        if(msg == '?when') {
+            message.delete();
+            message.channel.send('Remember everyone, we play D&D at 8pm ET every Saturday!');
         }
         
         if(msg == 'jaleed, who made you?') {
