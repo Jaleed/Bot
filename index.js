@@ -48,8 +48,7 @@ bot.on('message', (message) => {
         }
         
         if(msg == 'jaleed, who made you?') {
-            message.delete();
-            message.channel.send('@Nuqrs#0486');
+            message.channel.send('@!216628403921485824');
         }
         
         const args = message.content.trim().split(/ +/g);
