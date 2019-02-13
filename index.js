@@ -44,7 +44,7 @@ bot.on('message', (message) => {
         
         if(msg == '?ping') {
             message.delete();
-            message.channel.send('Pong, bitch!');
+            message.channels.get('dnd-chat').send('Pong, bitch!');
         }
         
         const args = message.content.trim().split(/ +/g);
