@@ -44,7 +44,7 @@ bot.on('message', (message) => {
         
         if(msg == '!ping') {
             message.delete();
-            message.channel.send('Pong');
+            message.reply('Pong');
         }
         
         const args = message.content.trim().split(/ +/g);
@@ -57,7 +57,7 @@ bot.on('message', (message) => {
             var rands = Math.floor(rand + b);
 
             message.delete();
-            message.channel.reply(`You rolled a d20 + ${b}. \nYou rolled a ` + rand + `. \nYour result is **` + rands + `**.`);
+            message.reply(`You rolled a d20 + ${b}. \nYou rolled a ` + rand + `. \nYour result is **` + rands + `**.`);
         }
         
         if (command === "jaleed") {
