@@ -49,7 +49,7 @@ bot.on('message', (message) => {
         
         if(msg == '?d&d') {
             message.delete();
-            message.channel.send('<@&454396878621114380> D&D time! <:Kayn:510871552225705984> <:Elmar:525967482582859778> <:Kana:542918484175224852> <:Karrus:510871567392047134> <:Zircones:545368422717063192> <a:DoomDance:478866469980209152> <a:aGandolf:521198899239845888>');
+            message.channel.send('<@&454396878621114380> D&D time! <:Kayn:510871552225705984> <:Elmar:525967482582859778> <:Kana:542918484175224852> <:Karrus:510871567392047134> <:Zircones:545368422717063192>');
         }
         
         if(msg == '?when') {
