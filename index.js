@@ -44,9 +44,9 @@ bot.on('message', (message) => {
         
         if(msg == '!!!pong') {
         setTimeout(function(){ 
-        message.channel.send('!!!ping'); 
-        }, 3000);
-            
+                message.delete();
+                message.channel.send('!!!ping'); 
+        }, 3000);  
         }
         
         if(msg == '?ping') {
