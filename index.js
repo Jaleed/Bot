@@ -42,6 +42,13 @@ bot.on('message', (message) => {
             message.channel.send('In order to roll, type **?[sides of dice] [modifier]**. \nI currently support 2, 4, 6, 8, 10, 12, 20, and 100 sided dice.');
         }
         
+        if(msg == '!!!pong') {
+        setTimeout(function(){ 
+        message.channel.send('!!!ping'); 
+        }, 3000);
+            
+        }
+        
         if(msg == '?ping') {
             message.delete();
             message.channel.send('Pong, bitch!');
