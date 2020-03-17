@@ -8,11 +8,11 @@ bot.on('ready', () => {
 
 bot.on('guildMemberAdd', member => {
         
-        const welcomechannel = member.guild.channels.find('name','dnd-chat')
+        const welcomechannel = member.guild.channels.find('name','off-topic')
          
         var embed = new Discord.RichEmbed()
         .setColor('RANDOM')
-        .setDescription("OH HELLOOOOOOOOO! " + member.user + " has joined the Rousing Bellows campaign.")
+        .setDescription("OH HELLOOOOOOOOO! " + member.user + " has joined the Broken Covenant campaign.")
         return welcomechannel.send(embed)
         
 });
@@ -21,7 +21,7 @@ bot.on('guildMemberAdd', member => {
         
         let role = member.guild.roles.get('454396878621114380');
         member.addRole(role).catch(console.error);
-        member.sendMessage('Welcome to Rousing Bellows. \nDo not be Tiefling scum. \n \nJust kidding... we do not have prejudice here...');
+        member.sendMessage('Welcome to Broken Covenant. \nDo not be Tiefling scum. \n \nJust kidding... we do not have prejudice here...');
 });
 
 bot.on('guildMemberRemove', member => {
