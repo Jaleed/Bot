@@ -60,7 +60,7 @@ bot.on('message', (message) => {
         
         if(msg == '?when') {
             message.delete();
-            message.channel.send('Remember everyone, we play D&D at 8pm ET every Saturday!');
+            message.channel.send('Remember everyone, we play D&D at 9:30pm ET every Friday!');
         }
         
         if(msg == 'jaleed, who made you?') {
